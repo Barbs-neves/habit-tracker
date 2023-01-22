@@ -9,11 +9,11 @@ function  add() {
   const today = new Date().toLocaleDateString('pt-br').slice(0, -5)
   const dayExists = nlwSetup.dayExists(today)
     if (dayExists) {
-      alert("Dia ja incluso💔")
+      alert("Este dia ja foi incluso💔 volte amanhã !!!")
       return
     }
 
-  alert("O dia  será adicionado com sucesso💚")
+  alert("O dia será adicionado com sucesso💚")
   nlwSetup.addDay(today)
 }
 
